@@ -24,9 +24,16 @@ class _Settings extends State<Settings>{
         title: new Text(
             'Settings',
               ),
-        centerTitle: true,
+        centerTitle: false,
         elevation: 5.0,
-
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.cancel),
+            onPressed: (){},
+            color: Colors.white,
+            tooltip: "Log out",
+          )
+        ],
       ),
       body: new Center(
          child: Container(

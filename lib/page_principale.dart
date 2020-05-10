@@ -102,12 +102,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: bodies[_currentIndex],
+
       floatingActionButton: FloatingActionButton(
         child:
           Icon(
                 Icons.location_on,
                  color: Colors.red,
-                  size: 40.0,
+                  size: 50.0,
                 ),
         backgroundColor: Colors.white,
         onPressed: () {
@@ -116,7 +117,10 @@ class _MyHomePageState extends State<MyHomePage> {
           }));
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomNavigationBar: BottomNavyBar(
+        backgroundColor: Colors.blue,
+        iconSize: 30.0,
         selectedIndex: _currentIndex,
         showElevation: true,
         onItemSelected: (index) => setState((){
