@@ -101,7 +101,14 @@ class _MyHomePageState extends State<MyHomePage> {
               })
         ],
       ),
-      body: bodies[_currentIndex],
+      body: Column(
+        children: <Widget>[
+          bodies[_currentIndex],
+
+          //mets ici ton code
+          
+        ],
+      ),
 
       floatingActionButton: FloatingActionButton(
         child:
